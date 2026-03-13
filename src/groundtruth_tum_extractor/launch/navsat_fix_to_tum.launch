@@ -1,0 +1,7 @@
+<launch>
+  <arg name="config_file" default="$(find groundtruth_tum_extractor)/config/mcd_navsat_fix.yaml" />
+
+  <node pkg="groundtruth_tum_extractor" type="navsat_fix_to_tum" name="navsat_fix_to_tum" output="screen">
+    <rosparam command="load" file="$(arg config_file)" />
+  </node>
+</launch>

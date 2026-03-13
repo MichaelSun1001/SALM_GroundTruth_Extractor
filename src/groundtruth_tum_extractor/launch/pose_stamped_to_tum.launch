@@ -1,0 +1,7 @@
+<launch>
+  <arg name="config_file" default="$(find groundtruth_tum_extractor)/config/viral_pose_stamped.yaml" />
+
+  <node pkg="groundtruth_tum_extractor" type="pose_stamped_to_tum" name="pose_stamped_to_tum" output="screen">
+    <rosparam command="load" file="$(arg config_file)" />
+  </node>
+</launch>

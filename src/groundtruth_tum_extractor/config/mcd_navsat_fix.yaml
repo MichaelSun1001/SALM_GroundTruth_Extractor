@@ -1,0 +1,6 @@
+input_path: /home/sax/rosbags/MCD
+output_path: /home/sax/rosbags/MCD/tum_truth
+topic: /vn200/GPS
+type: sensor_msgs/NavSatFix
+mode: enu
+skip_leading_duplicates: true

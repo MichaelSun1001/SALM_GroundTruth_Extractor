@@ -1,0 +1,4 @@
+input_path: /home/sax/rosbags/VIRAL
+output_path: /home/sax/rosbags/VIRAL/tum_truth
+topic: /leica/pose/relative
+type: geometry_msgs/PoseStamped
